@@ -16,6 +16,7 @@
 		CAF9A540233CB7DA005B4EC0 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A53F233CB7DA005B4EC0 /* RSSItem.swift */; };
 		CAF9A543233CB867005B4EC0 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A542233CB867005B4EC0 /* FeedParser.swift */; };
 		CAF9A546233CBDB5005B4EC0 /* XMLCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A545233CBDB5005B4EC0 /* XMLCell.swift */; };
+		CAFE3167233CE2890044F160 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE3166233CE2890044F160 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CAF9A53F233CB7DA005B4EC0 /* RSSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
 		CAF9A542233CB867005B4EC0 /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
 		CAF9A545233CBDB5005B4EC0 /* XMLCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLCell.swift; sourceTree = "<group>"; };
+		CAFE3166233CE2890044F160 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF9A52B233CB533005B4EC0 /* ViewController.swift */,
+				CAFE3166233CE2890044F160 /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				CAF9A546233CBDB5005B4EC0 /* XMLCell.swift in Sources */,
 				CAF9A540233CB7DA005B4EC0 /* RSSItem.swift in Sources */,
 				CAF9A543233CB867005B4EC0 /* FeedParser.swift in Sources */,
+				CAFE3167233CE2890044F160 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

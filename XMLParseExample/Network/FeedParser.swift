@@ -27,6 +27,8 @@ class FeedParser: NSObject, XMLParserDelegate  {
             currentPubDate = currentPubDate.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
     }
+    private var currentLink = ""
+    
     private var parserComlitionHandler: (([RSSItem]) -> Void)?
     
     func parseFeed(url: String, completionHandler : (([RSSItem]) -> Void)?) {
@@ -58,6 +60,7 @@ class FeedParser: NSObject, XMLParserDelegate  {
             currentTitle = ""
             currentDescription = ""
             currentPubDate = ""
+            currentLink = ""
         }
     }
     
@@ -66,6 +69,7 @@ class FeedParser: NSObject, XMLParserDelegate  {
         case "title": currentTitle += string
         case "description": currentDescription += string
         case "pubDate": currentPubDate += string
+        case "link": currentLink += string
         default : break
         }
     }
@@ -73,7 +77,7 @@ class FeedParser: NSObject, XMLParserDelegate  {
     //when end element </item>
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item" {
-            let rssItem = RSSItem(title: currentTitle, description: currentDescription, pubDate: currentPubDate)
+            let rssItem = RSSItem(title: currentTitle, description: currentDescription, pubDate: currentPubDate, link: currentLink)
             rssItems.append(rssItem)
         }
     }

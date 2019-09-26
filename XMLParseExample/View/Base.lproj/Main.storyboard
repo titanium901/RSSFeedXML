@@ -17,14 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XML Parser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-tP-HOb">
-                                <rect key="frame" x="163" y="44" width="88.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="149.5" y="54" width="115.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="qJL-yA-yLo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.sciencedaily.com/rss/top/technology.xml" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-7A-Yhd">
-                                <rect key="frame" x="35" y="72.5" width="344" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="53.5" y="94" width="307.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="J3x-vM-pnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,29 +45,30 @@
                                     <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XMLCell" id="rRP-Ga-VsM" customClass="XMLCell" customModule="XMLParseExample" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XMLCell" id="rRP-Ga-VsM" customClass="XMLCell" customModule="XMLParseExample" customModuleProvider="target">
                                         <rect key="frame" x="57" y="10" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MxE-ss-aBX">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ouq-6d-bx9">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ouq-6d-bx9">
                                                     <rect key="frame" x="4" y="4" width="296" height="96"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDX-ou-W3r">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDX-ou-W3r">
                                                             <rect key="frame" x="0.0" y="0.0" width="296" height="44"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8z-RM-TFX">
                                                             <rect key="frame" x="0.0" y="52" width="296" height="44"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,7 +93,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="aQm-tP-HOb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QJv-Qh-vfB"/>
+                            <constraint firstItem="aQm-tP-HOb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QJv-Qh-vfB"/>
                             <constraint firstItem="0ei-7A-Yhd" firstAttribute="top" secondItem="aQm-tP-HOb" secondAttribute="bottom" constant="8" id="hEI-Cc-1Zi"/>
                             <constraint firstItem="0ei-7A-Yhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUX-MY-iKq"/>
                             <constraint firstItem="aQm-tP-HOb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zN2-jv-Zke"/>
@@ -100,6 +107,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="kOr-Ug-Dcj">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="TGO-TW-JMA" customClass="DetailVC" customModule="XMLParseExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61t-2K-oUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-ij-pFv">
+                                <rect key="frame" x="20" y="74" width="374" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="0HM-eD-5T0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="DamascusMedium" family="Damascus" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoV-3A-lbR">
+                                <rect key="frame" x="20" y="468" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hso-cg-zFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lx8-ij-pFv" firstAttribute="leading" secondItem="nXy-ya-8wI" secondAttribute="leading" constant="20" id="5Pm-1D-hkh"/>
+                            <constraint firstItem="nXy-ya-8wI" firstAttribute="trailing" secondItem="lx8-ij-pFv" secondAttribute="trailing" constant="20" id="ClB-n7-hmE"/>
+                            <constraint firstItem="nXy-ya-8wI" firstAttribute="trailing" secondItem="zoV-3A-lbR" secondAttribute="trailing" constant="20" id="FZk-ka-E76"/>
+                            <constraint firstItem="zoV-3A-lbR" firstAttribute="top" secondItem="lx8-ij-pFv" secondAttribute="bottom" constant="44" id="hRO-SF-iFK"/>
+                            <constraint firstItem="zoV-3A-lbR" firstAttribute="leading" secondItem="nXy-ya-8wI" secondAttribute="leading" constant="20" id="ucg-fq-P2e"/>
+                            <constraint firstItem="lx8-ij-pFv" firstAttribute="top" secondItem="nXy-ya-8wI" secondAttribute="top" constant="30" id="uor-Jl-Uxj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nXy-ya-8wI"/>
+                    </view>
+                    <connections>
+                        <outlet property="linkLabel" destination="zoV-3A-lbR" id="bwd-qt-ddK"/>
+                        <outlet property="textView" destination="lx8-ij-pFv" id="cFL-AV-sGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nla-2G-SPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="126.5625"/>
         </scene>
     </scenes>
 </document>

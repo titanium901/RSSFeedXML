@@ -49,7 +49,7 @@ extension ViewController: UICollectionViewDataSource {
         if let item = rssItems?[indexPath.item] {
             cell.item = item
         }
-        
+        cell.configViewCell()
         return cell
     }
     
@@ -59,5 +59,12 @@ extension ViewController: UICollectionViewDataSource {
 // MARK: UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(#function)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC {
+            vc.rssItem = rssItems?[indexPath.item]
+            present(vc, animated: true)
+        }
+    }
 }
 
