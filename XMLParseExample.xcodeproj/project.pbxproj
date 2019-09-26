@@ -15,6 +15,7 @@
 		CAF9A534233CB534005B4EC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF9A532233CB534005B4EC0 /* LaunchScreen.storyboard */; };
 		CAF9A540233CB7DA005B4EC0 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A53F233CB7DA005B4EC0 /* RSSItem.swift */; };
 		CAF9A543233CB867005B4EC0 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A542233CB867005B4EC0 /* FeedParser.swift */; };
+		CAF9A546233CBDB5005B4EC0 /* XMLCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9A545233CBDB5005B4EC0 /* XMLCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CAF9A535233CB534005B4EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAF9A53F233CB7DA005B4EC0 /* RSSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
 		CAF9A542233CB867005B4EC0 /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		CAF9A545233CBDB5005B4EC0 /* XMLCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				CAF9A52D233CB533005B4EC0 /* Main.storyboard */,
 				CAF9A532233CB534005B4EC0 /* LaunchScreen.storyboard */,
+				CAF9A545233CBDB5005B4EC0 /* XMLCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				CAF9A52C233CB533005B4EC0 /* ViewController.swift in Sources */,
 				CAF9A528233CB533005B4EC0 /* AppDelegate.swift in Sources */,
 				CAF9A52A233CB533005B4EC0 /* SceneDelegate.swift in Sources */,
+				CAF9A546233CBDB5005B4EC0 /* XMLCell.swift in Sources */,
 				CAF9A540233CB7DA005B4EC0 /* RSSItem.swift in Sources */,
 				CAF9A543233CB867005B4EC0 /* FeedParser.swift in Sources */,
 			);
