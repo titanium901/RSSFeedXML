@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XMLParseExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lWc-jd-6Q6">
+                                <rect key="frame" x="0.0" y="147" width="414" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v7S-a5-A9E">
+                                    <size key="itemSize" width="378" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XMLCell" id="pWK-hH-Fl7">
+                                        <rect key="frame" x="18" y="0.0" width="378" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mlu-8E-T7b">
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3X-3C-XCr">
+                                                    <rect key="frame" x="8" y="8" width="81" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-1c-7oB">
+                                                    <rect key="frame" x="8" y="37" width="33" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1t-LW-k57">
+                                                    <rect key="frame" x="8" y="63" width="88" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Z3X-3C-XCr" secondAttribute="trailing" constant="289" id="3bi-fM-tQF"/>
+                                                <constraint firstItem="M1t-LW-k57" firstAttribute="leading" secondItem="mlu-8E-T7b" secondAttribute="leading" constant="8" id="KxP-UU-7M3"/>
+                                                <constraint firstItem="y2q-1c-7oB" firstAttribute="top" secondItem="Z3X-3C-XCr" secondAttribute="bottom" constant="8" id="L3L-xn-dS7"/>
+                                                <constraint firstItem="Z3X-3C-XCr" firstAttribute="top" secondItem="mlu-8E-T7b" secondAttribute="top" constant="8" id="PJd-P1-RhD"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="M1t-LW-k57" secondAttribute="trailing" constant="282" id="bVG-8d-NLb"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="y2q-1c-7oB" secondAttribute="trailing" constant="337" id="eY9-Md-EHV"/>
+                                                <constraint firstItem="Z3X-3C-XCr" firstAttribute="leading" secondItem="mlu-8E-T7b" secondAttribute="leading" constant="8" id="gNr-iB-bVa"/>
+                                                <constraint firstItem="y2q-1c-7oB" firstAttribute="leading" secondItem="mlu-8E-T7b" secondAttribute="leading" constant="8" id="tyf-wh-Fnw"/>
+                                                <constraint firstItem="M1t-LW-k57" firstAttribute="top" secondItem="y2q-1c-7oB" secondAttribute="bottom" constant="8" id="via-UH-gdZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="378" height="109"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XML Parser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-tP-HOb">
+                                <rect key="frame" x="162.5" y="44" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.sciencedaily.com/rss/top/technology.xml" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-7A-Yhd">
+                                <rect key="frame" x="35" y="73" width="344" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lWc-jd-6Q6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BcA-7W-mYa"/>
+                            <constraint firstItem="aQm-tP-HOb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QJv-Qh-vfB"/>
+                            <constraint firstItem="lWc-jd-6Q6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZvM-40-iWN"/>
+                            <constraint firstItem="0ei-7A-Yhd" firstAttribute="top" secondItem="aQm-tP-HOb" secondAttribute="bottom" constant="8" id="hEI-Cc-1Zi"/>
+                            <constraint firstAttribute="bottom" secondItem="lWc-jd-6Q6" secondAttribute="bottom" id="hXA-VD-E2Z"/>
+                            <constraint firstItem="0ei-7A-Yhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUX-MY-iKq"/>
+                            <constraint firstItem="lWc-jd-6Q6" firstAttribute="top" secondItem="0ei-7A-Yhd" secondAttribute="bottom" constant="57" id="qfm-8u-aGL"/>
+                            <constraint firstItem="aQm-tP-HOb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zN2-jv-Zke"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
