@@ -22,4 +22,12 @@ class DetailVC: UIViewController {
         }
     }
    
+    @IBAction func tapOnLink(_ sender: UITapGestureRecognizer) {
+        print("link")
+        guard let link = linkLabel.text else { return }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "WebVC") as? WebVC {
+            vc.website = link
+            present(vc, animated: true)
+        }
+    }
 }

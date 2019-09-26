@@ -27,7 +27,11 @@ class FeedParser: NSObject, XMLParserDelegate  {
             currentPubDate = currentPubDate.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
     }
-    private var currentLink = ""
+    private var currentLink = "" {
+        didSet {
+            currentLink = currentLink.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        }
+    }
     
     private var parserComlitionHandler: (([RSSItem]) -> Void)?
     
